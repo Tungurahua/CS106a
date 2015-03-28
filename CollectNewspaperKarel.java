@@ -11,7 +11,7 @@
 import stanford.karel.*;
 
 public class CollectNewspaperKarel extends Karel {
-	
+	move();
 	// You fill in this part
 
 }
