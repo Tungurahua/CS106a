@@ -37,5 +37,6 @@ public class MidpointFindingKarel extends SuperKarel {
 		turnAround();
 		move();
 		putBeeper();
+		move(;)
 	}
 }
