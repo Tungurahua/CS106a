@@ -56,7 +56,7 @@ public class MidpointFindingKarel extends SuperKarel {
 	}
 
 	private void clearMove(){
-		if(frontIsClear()){move();}
+		if(frontIsClear()){move();}else{turnAround();}
 	}
 
 }
