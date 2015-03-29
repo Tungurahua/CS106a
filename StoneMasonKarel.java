@@ -26,7 +26,7 @@ public class StoneMasonKarel extends SuperKarel {
 	private void rebuild_column(){
 		face_north();
 		while(frontIsClear()){
-			if(noBeepersPresent){
+			if(noBeepersPresent()){
 				putBeeper()
 			}
 			move();
