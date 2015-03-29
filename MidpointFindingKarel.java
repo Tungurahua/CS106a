@@ -38,6 +38,8 @@ public class MidpointFindingKarel extends SuperKarel {
 				move();
 				}else{
 					turnAround();
+					while(noBeepersPresent()){move();}
+					faceSouth();
 				}
 			}
 		pickBeeper();
@@ -53,4 +55,7 @@ public class MidpointFindingKarel extends SuperKarel {
 		}
 	}
 	
+	private void faceSouth(){
+		if(notFacingSouth()){turnLeft();}
+	}
 }
