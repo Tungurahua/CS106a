@@ -17,17 +17,17 @@ public class MidpointFindingKarel extends SuperKarel {
 		
 		// put beepers in corners and stand beside right beeper
 		putBeeper();
-		while(frontIsClear()){move();}
+		clearMove();
 		putBeeper();
 		turnAround();
-		move();
+		clearMove();
 		
 		// move between beepers until 
 		while(frontIsClear()){
 			midMove();	
 		}
 		turnAround();
-		while(noBeepersPresent()){move();}
+		//while(noBeepersPresent()){move();}
 
 	
 	}
