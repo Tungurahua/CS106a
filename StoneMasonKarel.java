@@ -13,7 +13,11 @@ import stanford.karel.*;
 public class StoneMasonKarel extends SuperKarel {
 	public void run(){
 		// You fill in this part
-		rebuild_column();
+		while(frontIsClear()){
+			rebuild_column();
+			go_home();
+			move_right();
+		}
 	}
 
 
@@ -22,7 +26,19 @@ public class StoneMasonKarel extends SuperKarel {
 			turnLeft();
 		}
 	}
-	
+
+	private void face_south(){
+		while(notFacingSouth()){
+			turnLeft();
+		}
+	}
+
+	private void face_east(){
+		while(notFacingEast()){
+			turnLeft();
+		}
+	}
+
 	private void rebuild_column(){
 		face_north();
 		while(frontIsClear()){
@@ -30,7 +46,22 @@ public class StoneMasonKarel extends SuperKarel {
 				putBeeper();
 			}
 			move();
-			
+
 		}
+	}
+
+	private void go_home(){
+		face_south();
+		while(frontIsClear()){
+			move();
+		}
+	}
+
+	private void move_right(){
+		face_east();
+		for (int i = 0; i < 4; i++) { 
+			move();
+		}
+
 	}
 }
