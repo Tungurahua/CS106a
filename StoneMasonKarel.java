@@ -26,28 +26,31 @@ public class StoneMasonKarel extends SuperKarel {
 			turnLeft();
 		}
 	}
-
 	private void face_south(){
 		while(notFacingSouth()){
 			turnLeft();
 		}
 	}
-
 	private void face_east(){
 		while(notFacingEast()){
 			turnLeft();
 		}
 	}
+	
+	private void putBeeperIfEmpty(){
+		if(noBeepersPresent()){
+			putBeeper();
+		}
+
+	}
 
 	private void rebuild_column(){
 		face_north();
 		while(frontIsClear()){
-			if(noBeepersPresent()){
-				putBeeper();
-			}
+			putBeeperIfEmpty();
 			move();
-
 		}
+		putBeeperIfEmpty();
 	}
 
 	private void go_home(){
