@@ -11,7 +11,14 @@
 import stanford.karel.*;
 
 public class StoneMasonKarel extends SuperKarel {
+	public void run(){
+		face_north();// You fill in this part
+	}
 
-	// You fill in this part
 
+	private void face_north(){
+		while(notFacingNorth()){
+			turnRight();
+		}
+	}
 }
