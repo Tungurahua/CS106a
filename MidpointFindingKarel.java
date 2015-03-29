@@ -43,7 +43,7 @@ public class MidpointFindingKarel extends SuperKarel {
 	}
 
 	private void putIfEmpty(){
-		if(noBeepersPresent){
+		if(noBeepersPresent()){
 			putBeeper();
 		}
 	}
