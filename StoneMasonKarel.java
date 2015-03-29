@@ -18,6 +18,7 @@ public class StoneMasonKarel extends SuperKarel {
 			go_home();
 			move_right();
 		}
+		rebuild_column();
 	}
 
 
