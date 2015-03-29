@@ -21,13 +21,10 @@ public class MidpointFindingKarel extends SuperKarel {
 		move();
 		while(frontIsClear()){
 			midMove();	
-			
 		}
-		
-		//go_up_line();
-		//clearLine();
-		//go_down_line();
-		//moveOnLineFindBeeper()
+		turnAround();
+		while(noBeepersPresent()){move();}
+
 	
 	}
 
