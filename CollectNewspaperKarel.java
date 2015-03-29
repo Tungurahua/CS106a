@@ -15,6 +15,9 @@ public class CollectNewspaperKarel extends SuperKarel {
 		move_out();
 		pick_up();
 		move_back();
+		putBeeper();
+		putBeeper();
+		putBeeper();
 	}
 	
 	private void move_out(){
