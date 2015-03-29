@@ -19,11 +19,10 @@ public class MidpointFindingKarel extends SuperKarel {
 		putBeeper();
 		turnAround();
 		move();
-		while(noBeepersPresent()){move();}
-		pickBeeper();
-		turnAround();
-		move();
-		putBeeper();
+		while(frontIsClear()){
+			midMove();	
+			
+		}
 		
 		//go_up_line();
 		//clearLine();
@@ -32,5 +31,11 @@ public class MidpointFindingKarel extends SuperKarel {
 	
 	}
 
-
+	private void midMove(){
+		while(noBeepersPresent()){move();}
+		pickBeeper();
+		turnAround();
+		move();
+		putBeeper();
+	}
 }
