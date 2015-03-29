@@ -43,7 +43,7 @@ public class MidpointFindingKarel extends SuperKarel {
 		turnAround(); // turn around
 		move(); // move
 		putIfEmpty(); // put new beeper
-		move(); //move
+		if(frontIsClear()){move();} //move
 	}
 
 	private void putIfEmpty(){
