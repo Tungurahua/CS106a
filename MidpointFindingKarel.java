@@ -14,6 +14,14 @@ import stanford.karel.*;
 
 public class MidpointFindingKarel extends SuperKarel {
 	public void run(){
+		putBeeper();
+		while(frontIsClear()){move();}
+		turnAround();
+		while(noBeepersPresent()){move();}
+		pickBeeper();
+		turnAround();
+		putBeeper();
+		
 		//go_up_line();
 		//clearLine();
 		//go_down_line();
