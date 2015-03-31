@@ -69,8 +69,7 @@ public class CheckerboardKarel extends SuperKarel {
 			if(frontIsClear()){move();}
 			if(frontIsClear()){move();}
 		}
-		moveWest();
-		faceEast();	
+		moveWest();	
 	}
 
 	private void goBottomLeft() {
