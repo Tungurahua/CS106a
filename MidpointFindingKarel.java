@@ -74,7 +74,7 @@ public class MidpointFindingKarel extends SuperKarel {
 	private void moveDown() {
 		// TODO Auto-generated method stub
 		while(frontIsClear()){
-			move();
+			if(frontIsClear()){move();}
 			move();
 			turnRight();
 			move();
