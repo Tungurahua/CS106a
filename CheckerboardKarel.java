@@ -18,7 +18,7 @@ public class CheckerboardKarel extends SuperKarel {
 
 	private void fillFirstRow() {
 		// TODO Auto-generated method stub
-		while(fontIsClear()){}
+		while(frontIsClear()){}
 		putBeeper();
 		if(frontIsClear()){
 			move();
