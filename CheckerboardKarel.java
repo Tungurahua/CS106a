@@ -26,12 +26,11 @@ public class CheckerboardKarel extends SuperKarel {
 
 	private void fillInnerRows() {
 		// TODO Auto-generated method stub
-		faceNorth();
 		while(frontIsClear()){
-			move();
 			moveWest();
 			while(frontIsClear()){
 				fillOtherThanBelow();
+				move();
 				}
 			faceNorth();
 		}
