@@ -14,7 +14,7 @@ public class CheckerboardKarel extends SuperKarel {
 	public void run(){
 		goBottomLeft();
 		fillFirstRow();
-		moveWest();
+
 		goUp();
 		fillInnerRows();
 		//		fillTopRow();
@@ -69,6 +69,7 @@ public class CheckerboardKarel extends SuperKarel {
 			if(frontIsClear()){move();}
 			if(frontIsClear()){move();}
 		}
+		moveWest();
 		faceEast();	
 	}
 
@@ -94,6 +95,7 @@ public class CheckerboardKarel extends SuperKarel {
 		faceWest();
 		while(frontIsClear()){
 			move();
+			faceEast();
 		}
 	}
 
