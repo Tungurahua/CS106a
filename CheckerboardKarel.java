@@ -50,6 +50,7 @@ public class CheckerboardKarel extends SuperKarel {
 			fillOtherThanBelow();
 			move();
 		}
+		fillOtherThanBelow();
 		moveWest();
 	}
 
