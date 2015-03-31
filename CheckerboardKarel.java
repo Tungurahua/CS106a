@@ -14,6 +14,16 @@ public class CheckerboardKarel extends SuperKarel {
 	public void run(){
 		goBottomLeft();
 		fillFirstRow();
+		rowUp();
+		moveWest();
+		faceEast();
+		makeCheckerRow();
+	}
+
+	private void rowUp() {
+		// TODO Auto-generated method stub
+		faceNorth();
+		move();
 	}
 
 	private void fillFirstRow() {
