@@ -41,25 +41,19 @@ public class CheckerboardKarel extends SuperKarel {
 			faceNorth();
 			move();
 			}
-			
-
 		}
-		private void fillInnerRow() {
+
+	private void fillInnerRow() {
 		// TODO Auto-generated method stub
 			faceEast();
 			while(frontIsClear()){
 			fillOtherThanBelow();
 			move();
 			}
-			
-			
 	}
 
 
-		fillOtherThanBelow();
-		
-	}
-
+	
 
 	private void fillOtherThanBelow() {
 		// TODO Auto-generated method stub
