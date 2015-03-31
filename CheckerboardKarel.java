@@ -17,7 +17,7 @@ public class CheckerboardKarel extends SuperKarel {
 		rowUp();
 		moveWest();
 		faceEast();
-		makeCheckerRow();
+		//makeCheckerRow();
 	}
 
 	private void rowUp() {
