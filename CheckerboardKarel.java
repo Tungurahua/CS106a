@@ -10,7 +10,61 @@
 import stanford.karel.*;
 
 public class CheckerboardKarel extends SuperKarel {
-
 	// You fill in this part
+	public void run(){
+		goBottomLeft();
+	}
 
+	private void goBottomLeft() {
+		/** From anywhere in the world, move Karel 
+		 * to the bottom left corner and face east 
+		 */
+		moveSouth();
+		moveWest();
+		faceEast();
+	}
+	
+// Move until meet a wall methods
+	private void moveSouth() {
+		// TODO Auto-generated method stub
+		faceSouth();
+		while(frontIsClear()){
+			move();
+		}
+	}
+	private void moveWest() {
+		// TODO Auto-generated method stub
+		faceWest();
+		while(frontIsClear()){
+			move();
+		}
+	}
+
+	// Turn Karel to face in a direction
+	private void faceSouth() {
+		// TODO Auto-generated method stub
+		while(notFacingSouth()){
+			turnLeft();
+		}
+	}
+	private void faceWest() {
+		// TODO Auto-generated method stub
+		while(notFacingWest()){
+			turnLeft();
+		}
+	}
+	private void faceEast() {
+		// TODO Auto-generated method stub
+		while(notFacingEast()){
+			turnLeft();
+		}
+	}
+	private void faceNorth() {
+		// TODO Auto-generated method stub
+		while(notFacingNorth()){
+			turnLeft();
+		}
+	}
+	
+	
 }
