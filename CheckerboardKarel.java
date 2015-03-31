@@ -14,16 +14,46 @@ public class CheckerboardKarel extends SuperKarel {
 	public void run(){
 		goBottomLeft();
 		fillFirstRow();
-		rowUp();
-		moveWest();
-		faceEast();
+		fillRemainingRows();
+		fillInnerRows();
+		fillTopRow();
+		//rowUp();
+		//moveWest();
+		//faceEast();
+		//testIfTop();
 		//makeCheckerRow();
 	}
 
-	private void rowUp() {
+	private void fillRemainingRows() {
 		// TODO Auto-generated method stub
+		
+	}
+
+	private void fillInnerRows() {
+		// TODO Auto-generated method stub
+		while(frontIsClear()){
+			moveWest();
+			while(frontIsClear()){
+				fillOtherThanBelow();
+				}
+			faceNorth();
+		}
+		
+	}
+
+	private void fillOtherThanBelow() {
+		// TODO Auto-generated method stub
+		faceSouth();
+		move();
+		if(beepersPresent()){
 		faceNorth();
 		move();
+		}else{
+			faceNorth();
+			move();
+			putBeeper();			
+		}
+		faceEast();
 	}
 
 	private void fillFirstRow() {
@@ -32,9 +62,9 @@ public class CheckerboardKarel extends SuperKarel {
 		putBeeper();
 		if(frontIsClear()){move();}
 		if(frontIsClear()){move();}
+		faceNorth();
 		}
 	}
-
 
 	private void goBottomLeft() {
 		/** From anywhere in the world, move Karel 
@@ -45,7 +75,7 @@ public class CheckerboardKarel extends SuperKarel {
 		faceEast();
 	}
 	
-// Move until meet a wall methods
+	// Move until meet a wall methods
 	private void moveSouth() {
 		// TODO Auto-generated method stub
 		faceSouth();
