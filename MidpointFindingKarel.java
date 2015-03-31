@@ -46,7 +46,7 @@ public class MidpointFindingKarel extends SuperKarel {
 	private void faceWest() {
 		// TODO Auto-generated method stub
 		while(notFacingWest()){
-			turnRight();
+			turnLeft();
 		}
 	}
 
