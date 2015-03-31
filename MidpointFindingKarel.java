@@ -26,16 +26,21 @@ public class MidpointFindingKarel extends SuperKarel {
 		
 	}
 
+	private void goWest() {
+		// TODO Auto-generated method stub
+		faceWest();
+		while(frontIsClear()){
+			move();
+		}
+	}
+
 	private void goSouth() {
 		// TODO Auto-generated method stub
 		faceSouth();
 		while(frontIsClear()){
 			move();
 		}
-		faceWest();
-		while(frontIsClear()){
-			move();
-		}
+
 	}
 
 	private void faceWest() {
