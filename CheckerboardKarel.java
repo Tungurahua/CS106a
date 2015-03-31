@@ -13,6 +13,16 @@ public class CheckerboardKarel extends SuperKarel {
 	// You fill in this part
 	public void run(){
 		goBottomLeft();
+		fillFirstRow();
+	}
+
+	private void fillFirstRow() {
+		// TODO Auto-generated method stub
+		while(fontIsClear()){}
+		putBeeper();
+		if(frontIsClear()){
+			move();
+		}
 	}
 
 	private void goBottomLeft() {
