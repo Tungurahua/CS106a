@@ -94,8 +94,9 @@ public class CheckerboardKarel extends SuperKarel {
 		faceWest();
 		while(frontIsClear()){
 			move();
-			faceEast();
 		}
+		faceEast();
+
 	}
 
 	// Turn Karel to face in a direction
