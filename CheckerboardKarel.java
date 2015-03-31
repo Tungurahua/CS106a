@@ -16,7 +16,7 @@ public class CheckerboardKarel extends SuperKarel {
 		fillFirstRow();
 		fillRemainingRows();
 		fillInnerRows();
-		fillTopRow();
+//		fillTopRow();
 		//rowUp();
 		//moveWest();
 		//faceEast();
