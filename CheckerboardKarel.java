@@ -37,9 +37,9 @@ public class CheckerboardKarel extends SuperKarel {
 		// TODO Auto-generated method stub
 		faceNorth();
 		while(frontIsClear()){
+			move();
 			fillInnerRow();
 			faceNorth();
-			move();
 			}
 		}
 
