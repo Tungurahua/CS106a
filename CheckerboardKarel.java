@@ -18,10 +18,11 @@ public class CheckerboardKarel extends SuperKarel {
 
 	private void fillFirstRow() {
 		// TODO Auto-generated method stub
-		while(frontIsClear()){}
+		while(frontIsClear()){
 		putBeeper();
 		if(frontIsClear()){
 			move();
+			}
 		}
 	}
 
