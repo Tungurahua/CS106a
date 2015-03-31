@@ -14,49 +14,34 @@ import stanford.karel.*;
 
 public class MidpointFindingKarel extends SuperKarel {
 	public void run(){
-		
-		// put beepers in corners and stand beside right beeper
-		putBeeper();
-			while(frontIsClear()){move();}
-		putBeeper();
-		turnAround();
-		move();
-		
-		// move between beepers until 
+		moveUpAcross();
+		faceSouth();
+		moveDown();
+	}
+	private void moveUpAcross() {
+		// TODO Auto-generated method stub
 		while(frontIsClear()){
-			midMove();	
+			move();
+			turnLeft();
+			move();
+			turnRight();
 		}
-		turnAround();
-		while(noBeepersPresent()){move();}
-
-	
 	}
-
-	private void midMove(){
-		// move until beeper encountered
-		while(noBeepersPresent()){
-				clearMove();
+	private void moveDown() {
+		// TODO Auto-generated method stub
+		while(frontIsClear()){
+			move();
+			move();
+			turnRight();
+			move();
+			turnLeft();
 		}
-		pickBeeper(); // pick it up
-		turnAround(); // turn around
-		clearMove(); // move
-		putIfEmpty(); // put new beeper
-		clearMove(); //move
-		
 	}
-
-	private void putIfEmpty(){
-		if(noBeepersPresent()){
-			putBeeper();
+	private void faceSouth() {
+		// TODO Auto-generated method stub
+		while(notFacingSouth()){
+			turnRight();
 		}
 	}
 	
-	private void faceSouth(){
-		if(notFacingSouth()){turnLeft();}
-	}
-
-	private void clearMove(){
-		if(frontIsClear()){move();}else{turnAround();}
-	}
-
 }
